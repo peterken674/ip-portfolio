@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    width: 60%;
+    margin: 100px 20% 0 20%;
+}
+#logo-div{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    width: 40px;
+    height: auto;
+}
+nav{
+    display: flex;
+    list-style: none;
+    width: 35%;
+    justify-content: space-evenly;
+}
