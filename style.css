@@ -21,7 +21,14 @@
     position: absolute;
     z-index: -1;
 }
-header{
+#banner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header{
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -47,4 +54,17 @@ nav{
     width: 35%;
     justify-content: space-evenly;
     overflow: hidden;
+}
+#title-div{
+    position: absolute;
+    margin-top: 35vh;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+#title{
+    color: white;
+    font-weight: 900;
+    font-size: 5.625rem;
+    letter-spacing: 0.15em;
 }
