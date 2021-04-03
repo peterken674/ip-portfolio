@@ -89,10 +89,74 @@ nav{
     border-left: 0.15em solid white;
 }
 /* End of banner section. */
-
+.section-heading{
+    font-size: 2.2rem;
+    padding: 4rem;
+}
 #about-me{
     position: absolute;
     top: 100vh;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about-me-content{
+    display: flex;
+    width: 66%;
+    justify-content: flex-start;
+}
+#bio{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    padding-right: 3em;
+    font-size: 1.25em;
+    font-weight: 300;
+    color: #0C0C17;
+    line-height: 1.5rem;
+}
+#bio a{
+    color: #6FC9B0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#bio a:visited {
+    color: #6FC9B0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#bio a:hover{
+    color: #0C0C17;
+}
+#skills{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #0C0C17;
+    width: 100%;
+}
+.skill-level{
+    background-color: #EFF0F7;
+    height: 0.4rem;
+    width: 100%;
+    border-radius: 0.2rem;
+    margin-bottom: 3rem;
+}
+#dev{
+    height: 100%;
+    width: 80%;
+    background-color: #6FC9B0;
+    border-radius: 0.2rem;
+}
+#ux {
+    height: 100%;
+    width: 60%;
+    background-color: #6FC9B0;
+    border-radius: 0.2rem;
+}
+#csec {
+    height: 100%;
+    width: 50%;
+    background-color: #6FC9B0;
+    border-radius: 0.2rem;
 }
