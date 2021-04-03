@@ -1,15 +1,42 @@
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
+
+#menu{
+    background-color: #0C0C17;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 7vh;
+    width: 100%;
+    transition: opacity 500ms linear,
+    visibility 0s linear 500ms;
+    z-index: 50;
+}
+#menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95rem;
+    width: 46%;
+    margin: 1vh 27% 0 27%;
+    color: rgb(197, 197, 197);
+    overflow: hidden;
+    position: fixed;
+}
+
 /* Banner section. */
-#banner-wrapper{
+#banner-wrapper {
     height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
-#banner-bg{
+
+#banner-bg {
     background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -21,21 +48,24 @@ body::-webkit-scrollbar{
     z-index: -2;
     opacity: 0.77;
 }
-#banner-overlay{
+
+#banner-overlay {
     background-color: rgba(96, 94, 100, 0.5);
     height: 100vh;
     width: 100%;
     position: absolute;
     z-index: -1;
 }
-#banner{
+
+#banner {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#header{
+
+#header {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -47,60 +77,72 @@ body::-webkit-scrollbar{
     overflow: hidden;
     position: absolute;
 }
-#logo-div{
+
+#logo-div {
     display: flex;
     align-items: center;
 }
-#logo{
+
+#logo {
     width: 40px;
     height: auto;
 }
-nav{
+
+nav {
     display: flex;
     list-style: none;
     width: 35%;
     justify-content: space-evenly;
     overflow: hidden;
 }
-#title-div{
+
+#title-div {
     position: absolute;
     margin-top: 35vh;
     text-align: center;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
 }
-#title-div{
+
+#title-div {
     width: fit-content;
 }
-#title{
+
+#title {
     color: white;
     font-weight: 900;
     font-size: 5.625rem;
     letter-spacing: 0.15em;
 }
-#subtitles{
+
+#subtitles {
     display: flex;
     color: #6FC9B0;
 }
-#subtitles > p{
+
+#subtitles>p {
     width: 33.33%;
     text-align: center;
     padding: 0.3em 0 0.3em 0;
 }
-#subtitles > p:first-child{
+
+#subtitles>p:first-child {
     border-right: 0.15em solid white;
 }
-#subtitles > p:last-child{
+
+#subtitles>p:last-child {
     border-left: 0.15em solid white;
 }
+
 /* End of banner section. */
-.section-heading{
+.section-heading {
     font-size: 2.2rem;
     padding: 4rem;
     overflow: hidden;
     font-family: 'Lato', sans-serif;
 }
-#about-me{
+
+#about-me {
     position: absolute;
     background-color: white;
     top: 100vh;
@@ -111,13 +153,15 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-#about-me-content{
+
+#about-me-content {
     display: flex;
     width: 66%;
     justify-content: flex-start;
     overflow: hidden;
 }
-#bio{
+
+#bio {
     width: 100%;
     font-family: 'Lato', sans-serif;
     padding-right: 3em;
@@ -126,51 +170,60 @@ nav{
     color: #0C0C17;
     line-height: 1.5rem;
 }
-#bio a{
+
+#bio a {
     color: #6FC9B0;
     text-decoration: none;
     transition: 0.5s;
 }
+
 #bio a:visited {
     color: #6FC9B0;
     text-decoration: none;
     transition: 0.5s;
 }
-#bio a:hover{
+
+#bio a:hover {
     color: #0C0C17;
 }
-#skills{
+
+#skills {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     color: #0C0C17;
     width: 100%;
 }
-.skill-level{
+
+.skill-level {
     background-color: #EFF0F7;
     height: 0.4rem;
     width: 100%;
     border-radius: 0.2rem;
     margin-bottom: 3rem;
 }
-#dev{
+
+#dev {
     height: 100%;
     width: 80%;
     background-color: #6FC9B0;
     border-radius: 0.2rem;
 }
+
 #ux {
     height: 100%;
     width: 60%;
     background-color: #6FC9B0;
     border-radius: 0.2rem;
 }
+
 #csec {
     height: 100%;
     width: 50%;
     background-color: #6FC9B0;
     border-radius: 0.2rem;
 }
-#about-footer{
+
+#about-footer {
     background-color: #EFF0F7;
     font-family: 'Lato', sans-serif;
     position: absolute;
@@ -184,12 +237,15 @@ nav{
     text-align: center;
     text-transform: uppercase;
 }
-#about-footer span{
+
+#about-footer span {
     font-size: 2.25rem;
     font-weight: 200;
 }
-#about-footer p{
+
+#about-footer p {
     font-size: 0.7rem;
     color: #6FC9B0;
 }
+
 /* End of About Me section. */
