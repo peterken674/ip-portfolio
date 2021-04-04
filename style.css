@@ -2,7 +2,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-#menu{
+#menu {
     background-color: #0C0C17;
     position: fixed;
     left: 0;
@@ -10,9 +10,10 @@ body::-webkit-scrollbar {
     height: 7vh;
     width: 100%;
     transition: opacity 500ms linear,
-    visibility 0s linear 500ms;
+        visibility 0s linear 500ms;
     z-index: 50;
 }
+
 #menu-header {
     display: flex;
     justify-content: space-between;
@@ -70,7 +71,12 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans",
+        sans-serif,
+        Helvetica,
+        Arial,
+        sans-serif;
+    ;
     font-size: 0.95rem;
     width: 46%;
     margin: 10vh 27% 0 27%;
@@ -83,7 +89,9 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
 }
-
+#logo-div p{
+    letter-spacing: 0.5rem;
+}
 #logo {
     width: 50px;
     height: auto;
@@ -96,9 +104,11 @@ nav {
     justify-content: space-evenly;
     overflow: hidden;
 }
-nav>li{
+
+nav>li {
     margin-left: 1em;
 }
+
 #title-div {
     position: absolute;
     margin-top: 35vh;
@@ -172,11 +182,13 @@ nav>li{
     font-weight: 300;
     color: #0C0C17;
     line-height: 1.5rem;
+    transition: 300ms;
 }
 
 #bio a {
     color: #6FC9B0;
     text-decoration: none;
+    font-weight: 400;
     transition: 0.5s;
 }
 
@@ -253,7 +265,7 @@ nav>li{
 
 /* End of About Me section. */
 
-#projects-section{
+#projects-section {
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -264,6 +276,7 @@ nav>li{
     flex-direction: column;
     align-items: center;
 }
+
 #project1 {
     grid-area: project1;
 }
@@ -271,30 +284,36 @@ nav>li{
 #project2 {
     grid-area: project2;
 }
+
 #project3 {
     grid-area: project3;
 }
+
 #project4 {
     grid-area: project4;
 }
+
 #project5 {
     grid-area: project5;
 }
+
 #project6 {
     grid-area: project6;
 }
-#projects-container{
+
+#projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: auto;
-    grid-template-areas: 
-    "project1 project2 project3"
-    "project4 project5 project6";
+    grid-template-areas:
+        "project1 project2 project3"
+        "project4 project5 project6";
     width: 60%;
     height: 50vh;
     grid-gap: 3rem;
 }
-#projects-container > div{
+
+#projects-container>div {
     border-radius: 0.5rem;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -307,10 +326,12 @@ nav>li{
     opacity: 0.5;
     transition: opacity 300ms linear;
 }
-#projects-container > div:hover {
+
+#projects-container>div:hover {
     opacity: 1;
 }
-.project-icon{
+
+.project-icon {
     font-size: 5rem;
     color: #6FC9B0;
 }
