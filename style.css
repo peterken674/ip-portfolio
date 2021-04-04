@@ -335,3 +335,72 @@ nav>li {
     font-size: 5rem;
     color: #6FC9B0;
 }
+
+/* Contact Me section. */
+#contacts{
+    height: 100vh;
+    position: absolute;
+    top: 300vh;
+    background-color: #605E64;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contacts-heading{
+    color: white;
+}
+
+footer{
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    background-color: #1F252F;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sm-icons{
+    color: #6FC9B0;
+    font-size: 1.3em;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#form-container{
+    width: 30%;
+}
+form > div{
+    display: flex;
+    flex-direction: column;
+    font-family: ;
+}
+
+form label{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: white;
+    padding: 3em 0 0.5em 0;
+}
+input, textarea{
+    font-family: 'Lato',
+    sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    overflow: auto;
+}
+#submit{
+    background-color: #6FC9B0;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    width: 25%;
+}
