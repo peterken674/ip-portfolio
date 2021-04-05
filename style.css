@@ -238,8 +238,8 @@ nav>li {
     width: 80%;
     background-color: #6FC9B0;
     border-radius: 0.2rem;
+    transition: width 1s ease-in-out;
 }
-
 #ux {
     height: 100%;
     width: 60%;
@@ -293,27 +293,27 @@ nav>li {
     align-items: center;
 }
 
-#project1 {
+#project1, #pr1 {
     grid-area: project1;
 }
 
-#project2 {
+#project2, #pr2 {
     grid-area: project2;
 }
 
-#project3 {
+#project3, #pr3 {
     grid-area: project3;
 }
 
-#project4 {
+#project4, #pr4 {
     grid-area: project4;
 }
 
-#project5 {
+#project5, #pr5 {
     grid-area: project5;
 }
 
-#project6 {
+#project6, #pr6 {
     grid-area: project6;
 }
 
@@ -339,19 +339,36 @@ nav>li {
     flex-direction: column;
     justify-content: space-evenly;
     box-shadow: 1px 1px 5px grey;
-    opacity: 0.5;
     transition: opacity 300ms linear;
-}
-
-#projects-container>div:hover {
-    opacity: 1;
 }
 
 .project-icon {
     font-size: 5rem;
     color: #6FC9B0;
 }
+.description{
+    color: #605E64;
+    margin: 0 2rem;
+}
+.project-title{
+    color: #6FC9B0;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+}
 
+.links{
+    margin-top: 1.5rem;
+}
+.links i{
+    padding: 0 0.5rem;
+    transition: 0.3s;
+}
+.links a{
+    color: #6FC9B0;
+}
+.links i:hover{
+    transform: scale(1.25);
+}
 /* Contact Me section. */
 #contacts{
     height: 100vh;
